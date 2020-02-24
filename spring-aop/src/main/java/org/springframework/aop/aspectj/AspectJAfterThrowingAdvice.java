@@ -59,6 +59,7 @@ public class AspectJAfterThrowingAdvice extends AbstractAspectJAdvice
 	@Override
 	public Object invoke(MethodInvocation mi) throws Throwable {
 		try {
+			// 执行异常通知方法
 			return mi.proceed();
 		}
 		catch (Throwable ex) {
